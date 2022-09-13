@@ -1,0 +1,15 @@
+C:\Users\ITUStudent\dev\intro-to-programming-sept-2022\GoalsSolution\Goals\bin\Debug\net6.0\Goals.exe
+C:\Users\ITUStudent\dev\intro-to-programming-sept-2022\GoalsSolution\Goals\bin\Debug\net6.0\Goals.deps.json
+C:\Users\ITUStudent\dev\intro-to-programming-sept-2022\GoalsSolution\Goals\bin\Debug\net6.0\Goals.runtimeconfig.json
+C:\Users\ITUStudent\dev\intro-to-programming-sept-2022\GoalsSolution\Goals\bin\Debug\net6.0\Goals.dll
+C:\Users\ITUStudent\dev\intro-to-programming-sept-2022\GoalsSolution\Goals\bin\Debug\net6.0\Goals.pdb
+C:\Users\ITUStudent\dev\intro-to-programming-sept-2022\GoalsSolution\Goals\obj\Debug\net6.0\Goals.csproj.AssemblyReference.cache
+C:\Users\ITUStudent\dev\intro-to-programming-sept-2022\GoalsSolution\Goals\obj\Debug\net6.0\Goals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ITUStudent\dev\intro-to-programming-sept-2022\GoalsSolution\Goals\obj\Debug\net6.0\Goals.AssemblyInfoInputs.cache
+C:\Users\ITUStudent\dev\intro-to-programming-sept-2022\GoalsSolution\Goals\obj\Debug\net6.0\Goals.AssemblyInfo.cs
+C:\Users\ITUStudent\dev\intro-to-programming-sept-2022\GoalsSolution\Goals\obj\Debug\net6.0\Goals.csproj.CoreCompileInputs.cache
+C:\Users\ITUStudent\dev\intro-to-programming-sept-2022\GoalsSolution\Goals\obj\Debug\net6.0\Goals.dll
+C:\Users\ITUStudent\dev\intro-to-programming-sept-2022\GoalsSolution\Goals\obj\Debug\net6.0\refint\Goals.dll
+C:\Users\ITUStudent\dev\intro-to-programming-sept-2022\GoalsSolution\Goals\obj\Debug\net6.0\Goals.pdb
+C:\Users\ITUStudent\dev\intro-to-programming-sept-2022\GoalsSolution\Goals\obj\Debug\net6.0\Goals.genruntimeconfig.cache
+C:\Users\ITUStudent\dev\intro-to-programming-sept-2022\GoalsSolution\Goals\obj\Debug\net6.0\ref\Goals.dll
