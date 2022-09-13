@@ -11,13 +11,8 @@ namespace GoalsProgram
             // MMMM Full month name (e.g. December), yyyy year
             // must be declared as a string since the final product is a string
             string localTime = DateTime.Now.ToString("dddd, dd MMMM, yyyy");
-
             bool saveConfirmation = false;
-
-            bool previousGoals = false;
-
             int maxLength = 256;
-
             string goal;
             //Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) is the C# way to get the %AppData% folder
             string? path = $"{Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)}/goals.txt";
@@ -25,21 +20,23 @@ namespace GoalsProgram
             Console.WriteLine("Goals Application!");
             Console.WriteLine();
             ConsoleKey previousGoalsResponse;
+
             do
             {
                 //will continue to show the prompt until either Y or N is entered
-                Console.WriteLine("Would you like to view all previous goals?");
-                Console.WriteLine("------------------------------------------");
+                Console.WriteLine("Would you like to view all previous goals? (Y/n)");
+                Console.WriteLine("------------------------------------------------");
                 previousGoalsResponse = Console.ReadKey(false).Key;
                 if (previousGoalsResponse != ConsoleKey.Enter)
                     Console.WriteLine();
             } while (previousGoalsResponse != ConsoleKey.Y && previousGoalsResponse != ConsoleKey.N);
+
             //provided the response is "Y", will add all the lines to the "lines" array, loop through them, tab and write line
             if(previousGoalsResponse == ConsoleKey.Y)
             {
                 string[] lines = File.ReadAllLines(path);
 
-
+                Console.WriteLine();
                 Console.WriteLine("Previous goals: ");
                 foreach (string line in lines)
                 {
@@ -49,15 +46,16 @@ namespace GoalsProgram
 
             do
             {
-                Console.WriteLine("Please enter your goal for today: ");
+                Console.WriteLine();
+                Console.WriteLine("Please enter your goal for today:");
                 Console.WriteLine("---------------------------------");
                 goal = Console.ReadLine();
-                if(goal.Length > maxLength)
+                if(goal.Length >= maxLength)
                     goal = goal.Substring(0, maxLength);
-
-                Console.WriteLine($"[For {localTime}, your goal is: ]");
+                Console.WriteLine();
+                Console.WriteLine($"[For {localTime}, your goal is:]");
                 Console.WriteLine(goal);
-                //string? saveChanges = Console.ReadLine();
+                Console.WriteLine();
 
                 ConsoleKey response;
                 do
@@ -67,9 +65,9 @@ namespace GoalsProgram
                     if (response != ConsoleKey.Enter)
                         Console.WriteLine();
                 } while (response != ConsoleKey.Y && response != ConsoleKey.N);
-
                 saveConfirmation = response == ConsoleKey.Y;
             } while (!saveConfirmation);
+
             using (StreamWriter sw = File.AppendText(path))
             {
                 sw.WriteLine(goal);
